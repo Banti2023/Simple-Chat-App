@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aguafina_script</item>
+        <item>@font/almarai_light</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/butcherman</item>
+        <item>@font/charm_bold</item>
+        <item>@font/condiment</item>
+        <item>@font/damion</item>
+        <item>@font/zeyada</item>
+    </array>
+</resources>

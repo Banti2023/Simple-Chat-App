@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "676205520889",
+    "project_id": "chat-app-dc01f",
+    "storage_bucket": "chat-app-dc01f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676205520889:android:5ae4bb3865f373702cbf28",
+        "android_client_info": {
+          "package_name": "com.krishna.setting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676205520889-rla06cfmlf4hu2d1ecij44pqiebu7879.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMW-HduXBmsUSzEkUNXcvI5HUoow8ujGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676205520889-rla06cfmlf4hu2d1ecij44pqiebu7879.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

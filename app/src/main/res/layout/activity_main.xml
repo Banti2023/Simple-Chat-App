@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/s13"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+   <com.makeramen.roundedimageview.RoundedImageView
+       android:layout_width="@dimen/_40sdp"
+       android:layout_height="@dimen/_40sdp"
+       android:id="@+id/profileimage"
+       android:layout_marginStart="@dimen/_16sdp"
+       android:layout_marginLeft="@dimen/_16sdp"
+       android:layout_marginTop="@dimen/_12sdp"
+       android:background="@drawable/back1"
+       android:scaleType="centerCrop"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:riv_corner_radius="@dimen/_8sdp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/Imagesignout"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/back1"
+        android:src="@drawable/logout"
+        android:padding="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@color/pink"/>
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/textname"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/green"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:fontFamily="@font/charm_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profileimage"
+        app:layout_constraintEnd_toEndOf="@+id/Imagesignout"
+        app:layout_constraintStart_toEndOf="@+id/profileimage"
+        app:layout_constraintTop_toTopOf="@+id/profileimage"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/bgf5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileimage">
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+      android:id="@+id/conversionRecycle"
+      android:clipToPadding="false"
+      android:orientation="vertical"
+      android:overScrollMode="never"
+      android:padding="@dimen/_20sdp"
+      android:visibility="gone"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+     <ProgressBar
+         android:layout_width="@dimen/_25sdp"
+         android:layout_height="@dimen/_25sdp"
+      android:id="@+id/pd"
+         android:layout_gravity="center"/>
+
+    </FrameLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/add"
+        android:background="@drawable/bgf5"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

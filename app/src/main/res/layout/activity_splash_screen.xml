@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/s7"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="chatting.json"
+        app:lottie_autoPlay="true"
+        android:layout_marginBottom="100dp"
+        app:lottie_loop="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mingle App"
+            android:id="@+id/mingle"
+            android:fontFamily="@font/charm_bold"
+            android:gravity="center"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="for"
+            android:gravity="center"
+            android:id="@+id/kh"
+            android:fontFamily="@font/damion"
+            android:layout_below="@+id/mingle"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Single dude"
+            android:id="@+id/sig"
+            android:fontFamily="@font/charm_bold"
+            android:layout_below="@+id/kh"
+            android:gravity="center"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Moj Karo Or  Roj Karo"
+            android:layout_below="@+id/sig"
+            android:fontFamily="@font/arvo"
+            android:gravity="center"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="from"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Hare Krishna"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
